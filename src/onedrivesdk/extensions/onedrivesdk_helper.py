@@ -20,6 +20,6 @@ def get_default_client(client_id, scopes):
     auth_provider = AuthProvider(http_provider=http_provider,
                                  client_id=client_id,
                                  scopes=scopes)
-    return OneDriveClient(https://infoawingu-my.sharepoint.com/_api/v2.0",
+    return OneDriveClient("https://infoawingu-my.sharepoint.com/_api/v2.0",
                           auth_provider,
                           http_provider)
