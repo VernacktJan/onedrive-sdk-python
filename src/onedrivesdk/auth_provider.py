@@ -36,8 +36,8 @@ except ImportError:
 
 class AuthProvider(AuthProviderBase):
 
-    AUTH_SERVER_URL = "https://login.live.com/oauth20_authorize.srf"
-    AUTH_TOKEN_URL = "https://login.live.com/oauth20_token.srf"
+    AUTH_SERVER_URL = "https://login.microsoftonline.com/common/oauth2/authorize"
+    AUTH_TOKEN_URL = "https://login.microsoftonline.com/common/oauth2/token"
 
     def __init__(self, http_provider, client_id=None, scopes=None, access_token=None, session_type=None, loop=None):
         """Initialize the authentication provider for authenticating
